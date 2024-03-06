@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Cards</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFF9C2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .destinations {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .destination-card {
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            background-color: #f0f0f0;
+            transition: transform 0.3s, background-color 0.3s;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(240, 240, 240, 0.8);
+        }
+
+        .destination-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        .destination-card img:hover {
+            transform: scale(1.05); 
+        }
+
+        .destination-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .destination-card p {
+            font-size: 16px;
+        }
+
+        .nav__links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav__links a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            transition: color 0.3s;
+        }
+
+        .nav__links a:hover {
+            color: whitesmoke; 
+        }
+        h1 {
+    text-align: center;
+    margin-top: 100px; 
+    font-size: 36px; 
+    font-weight: bold;
+    color: #333; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__logo"><a href="#">MAVIS .IO</a></div>
+        <ul class="nav__links">
+          <li class="link"><a href="index.html">Home</a></li> 
+          <li class="link"><a href="destinations.html">Destinations</a></li>
+          <li class="link"><a href="about alcoy.html">About Alcoy</a></li>
+          <li class="link"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    <header>
+        <h1>Explore Alcoy Tops Destinations</h1>
+    </header>
+    <main>
+        <section class="destinations">
+            <div class="destination-card" id="tingko-beach">
+                <img src="https://www.travelingcebu.com/images/antig-tingko-sands.jpg" alt="Tingko Beach">
+                <h3>Tingko Beach</h3>
+                <p>Escape to Tingko Beach, a paradise offering stunning turquoise waters, soft white sand, and a relaxing atmosphere. Enjoy swimming, snorkeling, sunbathing, or simply soaking up the scenic beauty.</p>
+            </div>
+            <div class="destination-card" id="voda-krasna">
+                <img src="https://vodakrasna.com/wp-content/uploads/2021/01/Voda-Krasna-Beach-Sunrise-41-copy-scaled.jpg" alt="Voda Krasna">
+                <h3>Voda Krasna Resort</h3>
+                <p>Experience luxury amidst nature at Voda Krasna Resort. This stunning resort offers breathtaking views, world-class amenities, and impeccable service. Relax by the pool, indulge in spa treatments, or explore the surrounding natural wonders.</p>
+            </div>
+            <div class="destination-card" id="Sea of Clouds">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTPqyo-El7qJ_h5qLrlb-icDH_XTytQgFpFQ&usqp=CAU" alt="Sea of Clouds">
+                <h3>Sea of Clouds</h3>
+                <p>Embark on a mesmerizing journey through the ethereal beauty of the Sea of Clouds. Lose yourself in the mystical allure of billowing clouds as they dance across the endless horizon. Let the serene atmosphere envelop you in tranquility and wonder, offering a peaceful retreat from the chaos of everyday life.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
